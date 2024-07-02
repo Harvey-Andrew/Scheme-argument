@@ -13,7 +13,12 @@ import CesiumZh from "./tool/cesiumToZh";
 const { appContext } = getCurrentInstance();
 const global = appContext.config.globalProperties;
 let viewer;
+<<<<<<< HEAD
 Cesium.Ion.defaultAccessToken = "your token";
+=======
+Cesium.Ion.defaultAccessToken =
+  "your token";
+>>>>>>> d27fe36cff681f0f1f5acc2058c7a31ecc0f022e
 
 onMounted(() => {
   // viewer是操控地图api的开始
