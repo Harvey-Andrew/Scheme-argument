@@ -1,20 +1,10 @@
-<<<<<<< HEAD
+
 个人博客：[CSDN博客-满分观察网友z](https://douglas.blog.csdn.net)
 
 演示地址：[哔哩哔哩-满分观察网友z](https://www.bilibili.com/video/BV1m8hKevEYq/?vd_source=357afc534780d3213e21f2e5fef2cffc)
 
 这是一个涉及Cesium.js（一个用于Web的3D地球和地图的JavaScript库）和前后端交互的案例。案例的主要功能包括地形平压、模型放置和调整、方案保存和查看等。
 
-[TOC]
-
-=======
-个人博客：https://douglas.blog.csdn.net
-
-[TOC]
-
-这是一个涉及Cesium.js（一个用于Web的3D地球和地图的JavaScript库）和前后端交互的方案论证案例。该案例的主要功能包括地形平压、模型放置和调整、方案保存和查看等。
-
->>>>>>> d27fe36cff681f0f1f5acc2058c7a31ecc0f022e
 # 1. 场景加载
 
 加载`Cesium的Melbourne Photogrammetry`的倾斜摄影作为底图，本身是贴地的，使用 Cesium 的**primitives**功能加载特定 ID 的数据集。
