@@ -1,4 +1,5 @@
 个人博客：https://douglas.blog.csdn.net
+这是一个涉及Cesium.js（一个用于Web的3D地球和地图的JavaScript库）和前后端交互的方案论证案例。该案例的主要功能包括地形平压、模型放置和调整、方案保存和查看等。
 
 # 1. 场景加载
 
