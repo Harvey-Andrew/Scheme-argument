@@ -1,6 +1,6 @@
 <!--
  * @FilePath     : /Scheme/src/views/AddScheme.vue
- * @Description  : 
+ * @Description  : 添加方案
  * @Author       : Harvey-Andrew
  * @Version      : 0.0.1
  * @LastEditors  : Harvey-Andrew 
@@ -62,20 +62,6 @@
           <el-input readonly style="width: 40%" value="平均高度"> </el-input>
           <el-input readonly style="width: 55%" :value="data.tileHeight"> </el-input>
         </div>
-
-        <!-- 下一步 -->
-        <!-- <el-button
-          size="small"
-          type="info"
-          class="float-right my-5"
-          @click="
-            () => {
-              endDraw();
-              data.active = 1;
-            }
-          "
-          >下一步</el-button
-        > -->
         <button
           class="float-right btn btn--stripe"
           @click="
@@ -129,14 +115,7 @@
           <ZoomIn @click="toAdjust('amplify')" />
           <ZoomOut @click="toAdjust('reduce')" />
         </div>
-        <!-- <el-button
-          v-show="data.modelEntity"
-          type="primary"
-          size="small"
-          class="float-right mt-3 mb-3 ml-3 p-3"
-          @click="data.dialogVisible = true"
-          >提&nbsp;&nbsp;&nbsp;&nbsp;交</el-button
-        > -->
+
         <button
           v-show="data.modelEntity"
           class="float-right mt-3 mb-3 ml-3 p-3 checkScheme"
@@ -144,18 +123,7 @@
         >
           <span>提&nbsp;&nbsp;&nbsp;&nbsp;交</span>
         </button>
-        <!-- <el-button
-          type="info"
-          size="small"
-          class="float-right mt-3 mb-3"
-          @click="
-            () => {
-              endDraw();
-              data.active = 0;
-            }
-          "
-          >上一步</el-button
-        > -->
+
         <button
           class="float-right btn btn--stripe"
           @click="
@@ -168,13 +136,7 @@
           上一步
         </button>
       </div>
-      <!-- <el-button
-        type="success"
-        size="small"
-        class="float-left mt-2"
-        @click="toScheme"
-        >查看方案</el-button
-      > -->
+
       <button class="float-left checkScheme mt-4" @click="toScheme">
         <span>查看方案</span>
       </button>
@@ -275,6 +237,7 @@ const onSumbit = () => {
       if (res.code === 200) {
         reset();
         ElMessage.success("添加方案成功！");
+        isEdit.value = false;
       }
     });
   }
@@ -434,6 +397,8 @@ onUnmounted(() => {
 <style lang="scss">
 .el-card {
   background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  border-radius: 10px;
+  border: none;
   :deep(.el-card__header) {
     border-bottom: none !important;
   }
@@ -443,7 +408,7 @@ onUnmounted(() => {
 }
 
 .addscheme {
-  width: 22%;
+  width: 32%;
   position: absolute;
   top: 4%;
   left: 4%;
@@ -468,7 +433,7 @@ onUnmounted(() => {
     float: left;
 
     svg {
-      width: 20px;
+      width: 23px;
       position: relative;
       top: 5px;
       margin-right: 3px;
@@ -482,7 +447,7 @@ onUnmounted(() => {
     svg {
       background: rgb(85, 84, 84);
       color: #fff;
-      width: 20px;
+      width: 23px;
       position: relative;
       top: 5px;
       margin-right: 3px;
@@ -524,7 +489,7 @@ onUnmounted(() => {
     svg {
       background: rgb(85, 84, 84);
       color: #fff;
-      width: 22px;
+      width: 25px;
       margin-right: 3px;
       border-radius: 50%;
       cursor: pointer;
@@ -683,5 +648,9 @@ $border-color-hover: $color-black;
       }
     }
   }
+}
+.el-dialog {
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  border-radius: 10px;
 }
 </style>

@@ -14,15 +14,7 @@
       <div class="card-header">
         <span class="font-semibold text-lg">查看方案</span>
       </div>
-      <!-- 添加方案 -->
-      <!-- <el-button
-        type="success"
-        size="small"
-        class="float-right"
-        style="margin-top: -25px"
-        @click="toAddScheme"
-        >方案论证</el-button
-      > -->
+
       <button
         class="float-right checkScheme"
         style="margin-top: -25px"
@@ -178,13 +170,15 @@ onUnmounted(() => {
 
 <style lang="scss">
 .scheme {
-  width: 20%;
+  width: 32%;
   position: absolute;
   top: 4%;
   left: 4%;
   z-index: 999;
   font-size: 15px;
   font-weight: 600;
+  background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+  border-radius: 10px;
 
   .list {
     border: 1px solid #dcdfe6;
