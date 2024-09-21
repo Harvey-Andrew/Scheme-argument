@@ -3,7 +3,7 @@
 
 演示地址：[哔哩哔哩-满分观察网友z](https://www.bilibili.com/video/BV1m8hKevEYq/?vd_source=357afc534780d3213e21f2e5fef2cffc)
 
-这是一个涉及Cesium.js（一个用于Web的3D地球和地图的JavaScript库）和前后端交互的案例。案例的主要功能包括地形平压、模型放置和调整、方案保存和查看等。
+该cesium案例的主要功能包括地形平压、模型放置和调整、方案保存和查看等。
 
 # 1. 场景加载
 
